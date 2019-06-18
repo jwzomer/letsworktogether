@@ -152,7 +152,7 @@ select {
 	cursor: pointer;
 	pointer-events: none; /*Make the arrow unclickable so that a user will click the select beneath it to reveal the options*/
 }
-.select-arrow::after {
+.select-arrow:not(:last-of-type)::after {
 	content: '';
 	display: block;
 	width: 1px;
@@ -194,20 +194,11 @@ select[data-option-selected="web developer"] {
 select[data-option-selected="branding project"] {
 	max-width: 12.6ch;
 }
-select[data-option-selected="freelance"] {
-	max-width: ch;
+select[data-option-selected="print project"] {
+	max-width: 4.6ch;
 }
-select[data-option-selected="freelance"] {
-	max-width: ch;
-}
-select[data-option-selected="freelance"] {
-	max-width: ch;
-}
-select[data-option-selected="freelance"] {
-	max-width: ch;
-}
-select[data-option-selected="freelance"] {
-	max-width: ch;
+select[data-option-selected="website project"] {
+	max-width: 6.8ch;
 }
 
 input[type="submit"] {

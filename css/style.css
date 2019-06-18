@@ -126,9 +126,7 @@ select {
 	-moz-appearance: none; 
 	-webkit-appearance: none; 
 	display: inline-block;
-	/*position: relative;
-    left: -0.2ch;*/
-    /*Adjusts for the space at the start of each select > option*/
+	padding-right: 1em; /*Extend the select box to the right so users can click on the arrow I've added*/
 }
 .select-arrow {
 	position: relative;
@@ -138,7 +136,7 @@ select {
 	/*Arrow*/
     content: '';
     position: absolute;
-    right: -0.5em;
+    right: 0.5em;
     top: calc(50% - .25em);
     border: 2px solid;
     border-top: none;

@@ -158,17 +158,58 @@ select {
 	width: 1px;
 	height: 1px;
 }
-
 select[name="employment-type"] {
 	color: var(--purple);
 }
 select[name="job-type"] {
 	color: var(--orange);
-/*	display: block;*/
 }
 select[name="project-type"] {
 	color: var(--green);
 }
+select[data-option-selected="freelance"] {
+	max-width: 7.8ch;
+}
+select[data-option-selected="contract"] {
+	max-width: 7.1ch;
+}
+select[data-option-selected="full-time"] {
+	max-width: 7.1ch;
+}
+select[data-option-selected="volunteer"] {
+	max-width: 7.9ch;
+}
+select[data-option-selected="logo designer"] {
+	max-width: 10.6ch;
+}
+select[data-option-selected="graphic designer"] {
+	max-width: 12.7ch;
+}
+select[data-option-selected="web designer"] {
+	max-width: 10.5ch;
+}
+select[data-option-selected="web developer"] {
+	max-width: 11.5ch;
+}
+select[data-option-selected="branding project"] {
+	max-width: 12.6ch;
+}
+select[data-option-selected="freelance"] {
+	max-width: ch;
+}
+select[data-option-selected="freelance"] {
+	max-width: ch;
+}
+select[data-option-selected="freelance"] {
+	max-width: ch;
+}
+select[data-option-selected="freelance"] {
+	max-width: ch;
+}
+select[data-option-selected="freelance"] {
+	max-width: ch;
+}
+
 input[type="submit"] {
 	display: block;
 	font-size: .85em;

@@ -164,7 +164,7 @@ select[name="employment-type"] {
 }
 select[name="job-type"] {
 	color: var(--orange);
-	display: block;
+/*	display: block;*/
 }
 select[name="project-type"] {
 	color: var(--green);

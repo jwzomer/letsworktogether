@@ -132,6 +132,9 @@ select {
 .select-arrow {
 	position: relative;
 	font-size: inherit;
+	display: inline;
+}
+.select-arrow:nth-of-type(2) {
 	display: block;
 }
 .select-arrow::after {

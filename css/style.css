@@ -142,7 +142,7 @@ select[name="project-type"] {
 }
 input[type="submit"] {
 	display: block;
-	font-size: .9em;
+	font-size: .85em;
 	appearance: none;
 	-moz-appearance: none; 
 	-webkit-appearance: none;
@@ -151,6 +151,7 @@ input[type="submit"] {
 	text-decoration: underline;
 	cursor: pointer;
 	padding: 0;
+	margin-top: .5em
 }
 /*--------------------------------------------------------
 						Article

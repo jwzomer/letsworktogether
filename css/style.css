@@ -97,26 +97,6 @@ ol li::before {
     counter-increment: ordered-list-counter;
     opacity: .8;
 }
-/*-------------Inputs and Buttons--------------------------*/
-
-select {
-	border: none;
-	/*appearance: none;
-	-moz-appearance: none; 
-	-webkit-appearance: none; */
-}
-select[name="employment-type"] {
-	color: var(--purple);
-}
-select[name="job-type"] {
-	color: var(--orange);
-}
-select[name="project-type"] {
-	color: var(--green);
-}
-input[type="submit"] {
-	display: block;
-}
 
 /*----------------------Identity--------------------------*/
 .logo {
@@ -138,6 +118,34 @@ main {
 #job-query {
 	margin: auto;
 	font-size: 30px;
+}
+/*-------------Inputs and Buttons--------------------------*/
+select {
+	border: none;
+	/*appearance: none;
+	-moz-appearance: none; 
+	-webkit-appearance: none; */
+	display: inline-block;
+}
+select[name="employment-type"] {
+	color: var(--purple);
+}
+select[name="job-type"] {
+	color: var(--orange);
+	display: block;
+}
+select[name="project-type"] {
+	color: var(--green);
+}
+input[type="submit"] {
+	display: block;
+	font-size: .9em;
+	appearance: none;
+	-moz-appearance: none; 
+	-webkit-appearance: none;
+	background: none;
+	border: none;
+	text-decoration: underline;
 }
 /*--------------------------------------------------------
 						Article

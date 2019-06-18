@@ -28,7 +28,7 @@
 				<span class="looking-for">
 					I'm looking for a 
 					    <span class="select-arrow">
-							<select name="employment-type" form="job-query">
+							<select name="employment-type" form="job-query" data-option-selected="freelance">
 								<option value="freelance" selected>freelance</option>
 								<option value="contract">contract</option>
 								<option value="full-time">full-time</option>
@@ -36,7 +36,7 @@
 						    </select>
 					    </span>
 					    <span class="select-arrow">
-							<select name="job-type" form="job-query">
+							<select name="job-type" form="job-query" data-option-selected="web developer">
 								<option value="logo designer">logo designer</option>
 								<option value="graphic designer">graphic designer</option>
 								<option value="web designer">web designer</option>
@@ -45,7 +45,7 @@
 						</span>
 					for a 
 						<span class="select-arrow">
-							<select name="project-type" form="job-query">
+							<select name="project-type" form="job-query" data-option-selected="website">
 								<option value="branding project">branding project</option>
 								<option value="print project">print project</option>
 								<option value="website" selected>website</option>
@@ -71,12 +71,19 @@
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script>
-			var valueAttr = $('option:checked').val();
+			var valueAttr = $(this).children('option:checked').val();
 			//When a user clicks on an option...
-			// $('select').click(function() {
+			$('select').click(function() {
 				//Assign option's value to the parent select as a data attribute
-				// $( "this option" ).parent().attr('data-option-selected', valueAttr);
-			// });
+				$( this ).parent().attr('data-option-selected', valueAttr);
+				//$( 'option' ).parent().attr('data-option-selected', valueAttr);
+			});
+		</script>
+		<script>
+			$('select').on('change', function(e){ 
+				var valueAttr = $(this).children('option:checked').val();
+			    $( this ).attr('data-option-selected', valueAttr);
+			});
 		</script>
 		<!-- Information about LinkedIn's API for Recommendations https://developer.linkedin.com/docs/fields/recommendations -->
 	</body>

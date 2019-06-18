@@ -146,6 +146,7 @@ select {
     width: 0.25em;
     height: 0.25em;
 	cursor: pointer;
+	pointer-events: none; /*Make the arrow unclickable so that a user will click the select beneath it to reveal the options*/
 }
 
 select[name="employment-type"] {

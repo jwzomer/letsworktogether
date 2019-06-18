@@ -132,6 +132,7 @@ select {
 .select-arrow {
 	position: relative;
 	font-size: inherit;
+	display: block;
 }
 .select-arrow::after {
 	/*Down arrow*/

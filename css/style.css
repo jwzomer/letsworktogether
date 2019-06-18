@@ -120,24 +120,10 @@ main {
 	font-size: 30px;
 }
 /*-------------Inputs and Buttons--------------------------*/
-select {
-	border: none;
-	appearance: none;
-	-moz-appearance: none; 
-	-webkit-appearance: none; 
-	display: inline-block;
-	padding-right: 1em; /*Extend the select box to the right so users can click on the arrow I've added*/
-	cursor: pointer;
-	max-width: 100%;
-	transition: max-width .5s;
-}
 .select-arrow {
 	position: relative;
 	font-size: inherit;
 	display: inline;
-}
-.select-arrow:nth-of-type(2) {
-	/*display: block;*/
 }
 .select-arrow::before {
 	/*Down arrow*/
@@ -155,6 +141,7 @@ select {
 	pointer-events: none; /*Make the arrow unclickable so that a user will click the select beneath it to reveal the options*/
 }
 .select-arrow:not(:last-of-type)::after {
+	/*Make sure each select (except the last one) breaks into a new line after it */
 	content: '';
 	display: block;
 	width: 1px;
@@ -168,6 +155,18 @@ select {
 }
 .select-arrow:nth-of-type(3) {
 	color: var(--green);
+}
+select {
+	border: none;
+	appearance: none;
+	-moz-appearance: none; 
+	-webkit-appearance: none; 
+	display: inline-block;
+	padding-right: 1em; /*Extend the select box to the right so users can click on the arrow I've added*/
+	cursor: pointer;
+	max-width: 100%;
+	transition: max-width .5s;
+	color: currentColor;
 }
 select[data-option-selected="freelance"] {
 	max-width: 7.8ch;

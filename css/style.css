@@ -101,9 +101,9 @@ ol li::before {
 
 select {
 	border: none;
-	appearance: none;
-	-moz-appearance: none; /* Firefox */
-	-webkit-appearance: none; /* Safari and Chrome */
+	/*appearance: none;
+	-moz-appearance: none; 
+	-webkit-appearance: none; */
 }
 select[name="employment-type"] {
 	color: var(--purple);

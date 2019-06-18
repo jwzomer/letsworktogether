@@ -1,0 +1,195 @@
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:100');
+	body {
+		width: 100vw;
+		height: 100vh;
+		display: grid;
+		font-family: 'Libre Franklin', sans-serif;
+		font-size: 100px;
+		font-weight: 100;
+		color: #777;
+	}
+	.green {
+		color: rgba(77, 138, 83, 1);
+		transition: color 1s;
+	}
+	#jozo-identity {
+		margin: auto;
+	}
+	#jozo-identity div[class^="group-"] {
+		display: inline-block;
+		max-height: 1.2em;
+		position: relative;
+		overflow: hidden;
+		margin-right: -0.3ch;
+		transition: margin-right 1s;
+	}
+	#jozo-identity span {
+		display: inline-block;
+	}
+	#jozo-identity .capital {
+		left: 0;
+		position: absolute;
+		top: -100%;
+		transition: top 1s;
+	}
+	#jozo-identity .lowercase {
+		margin-right: -0.1em;
+		transition: opacity .5s;
+	}
+	#jozo-identity .dot {
+		height: .079em;
+		width: .062em;
+		background: #848484;
+		position: absolute;
+		bottom: .22em;
+		border-radius: 0.015ch;
+	}
+	#jozo-identity span:last-child {
+		margin-left: -0.15em;
+	}
+	#jozo-identity .oreative {
+		padding-left: .05ch;
+	}
+	#jozo-identity .group-four span:last-child::first-letter {
+		margin-left: 0;
+		color: inherit;
+		transition: margin-left 1s, color 1s;
+	}
+
+
+	/*-----Initial State styles-----*/
+
+	#jozo-identity.initial-state div[class^="group-"] span:last-child {
+		max-width: 0.85ch;
+		transition: max-width 1s, margin-left 1s;
+	}
+	#jozo-identity.initial-state .group-three {
+		height: 100%;
+		width: 0.1ch;
+		/*transition: width 1s;*/
+	}
+
+
+	/*-----Reveal Words styles-----*/
+
+	#jozo-identity.reveal-words div[class^="group-"] span:last-child {
+		max-width: 6ch;
+	}
+	#jozo-identity.reveal-words .group-four span:last-child::first-letter {
+	    margin-left: -0.9ch;
+	    color: rgba(77, 138, 83, 0);
+	}
+
+
+	/*-----Space Words styles-----*/
+
+	#jozo-identity.space-words div[class^="group-"] {
+		margin-right: 0;
+	}
+
+
+	/*-----Letter Switch styles-----*/
+
+	#jozo-identity.letter-switch .capital {
+		top: 0;
+	}
+	#jozo-identity.letter-switch .lowercase {
+		opacity: 0;
+	}
+	#jozo-identity.letter-switch span:last-child {
+	    margin-left: 0;
+	}
+
+
+	/*-----To Dash styles-----*/
+
+	#jozo-identity.to-dash .group-three {
+		animation-duration: 1s;
+		animation-name: group-three-width;
+		animation-fill-mode: forwards;
+	}
+	#jozo-identity.to-dash .dot {
+		animation-duration: .125s;
+		animation-name: dot-to-dash;
+		animation-fill-mode: forwards;
+		animation-timing-function: ease-out;
+		animation-delay: .25s;
+	}
+	@keyframes group-three-width{
+		0% {
+			width: 0.1ch;
+		}
+		100% {
+			width: .72em;
+		}
+	}
+	@keyframes dot-to-dash {
+		0% {
+			width: .062em;
+			height: .079em;
+			bottom: .22em;
+		}
+		25% {
+			height: calc(.041em + .22em);
+			width: .062em;
+			bottom: .22em;
+		}
+		50% {
+
+		}
+		75% {
+			height: .041em;
+			bottom: 0.425em;
+			width: .062em;
+		}
+		100% {
+			width: .72em;
+			height: .041em;
+			bottom: 0.425em;
+		}
+	}
+</style>
+
+<div id="jozo-identity" class="initial-state">
+	<div class="group-one">
+		<span class="capital">J</span>
+		<span class="lowercase">j</span>
+		<span class="ohn">ohn</span>
+	</div>
+	<div class="group-two">
+		<span class="capital">Z</span>
+		<span class="lowercase">z</span>
+		<span class="omer">omer</span>
+	</div>
+	<div class="group-three">
+		<div class="dot"></div>
+	</div>
+	<div class="group-four green">
+		<span class="capital">C</span>
+		<span class="lowercase">c</span>
+		<span class="oreative">oreative</span>
+	</div>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script type="text/javascript">
+ $(document).keydown(function(event) {
+   if(event.which == 90){
+   	//Press z
+     $( "#jozo-identity" ).toggleClass( "space-words" );
+   }if(event.which == 88){
+   	//Press x
+     $( "#jozo-identity" ).toggleClass( "letter-switch" );
+   }if(event.which == 67){
+   	//Press c
+     $( "#jozo-identity" ).toggleClass( "reveal-words" );
+   }if(event.which == 86){
+   	//Press v
+     $( "#jozo-identity" ).toggleClass( "to-dash" );
+   }
+ });
+</script>

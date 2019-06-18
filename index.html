@@ -37,7 +37,7 @@
 					    </span>
 					    <span class="select-arrow">
 							<select name="job-type" form="job-query">
-								<option value="logo designer" selected>logo designer</option>
+								<option value="logo designer">logo designer</option>
 								<option value="graphic designer">graphic designer</option>
 								<option value="web designer">web designer</option>
 								<option value="web developer" selected>web developer</option>
@@ -70,6 +70,14 @@
 			</p>
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			var valueAttr = $('option:checked').val();
+			//When a user clicks on an option...
+			// $('select').click(function() {
+				//Assign option's value to the parent select as a data attribute
+				// $( "this option" ).parent().attr('data-option-selected', valueAttr);
+			// });
+		</script>
 		<!-- Information about LinkedIn's API for Recommendations https://developer.linkedin.com/docs/fields/recommendations -->
 	</body>
 </html>

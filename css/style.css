@@ -135,9 +135,9 @@ select {
 	display: inline;
 }
 .select-arrow:nth-of-type(2) {
-	display: block;
+	/*display: block;*/
 }
-.select-arrow::after {
+.select-arrow::before {
 	/*Down arrow*/
     content: '';
     position: absolute;
@@ -151,6 +151,12 @@ select {
     height: 0.25em;
 	cursor: pointer;
 	pointer-events: none; /*Make the arrow unclickable so that a user will click the select beneath it to reveal the options*/
+}
+.select-arrow::after {
+	content: '';
+	display: block;
+	width: 1px;
+	height: 1px;
 }
 
 select[name="employment-type"] {

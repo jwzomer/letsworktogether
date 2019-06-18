@@ -106,6 +106,8 @@ ol li::before {
 						Header
 --------------------------------------------------------*/
 header {
+	position: fixed;
+	top: 0;
 }
 
 /*--------------------------------------------------------
@@ -130,7 +132,7 @@ main {
     content: '';
     position: absolute;
     right: 0.5em;
-    top: calc(50% - .25em);
+    top: calc(50% - .125em);
     border: 2px solid;
     border-top: none;
     border-left: none;
@@ -214,6 +216,7 @@ input[type="submit"] {
 	cursor: pointer;
 	padding: 0;
 	margin-top: 1.25em
+	color: var(--text-gray);
 }
 /*--------------------------------------------------------
 						Article
@@ -227,7 +230,8 @@ input[type="submit"] {
 						Footer
 --------------------------------------------------------*/
 footer {
-	
+	position: fixed;
+	bottom: 0;
 }
 
 /* Try this Material Design inspired transition easing 300ms cubic-bezier(0.4, 0.0, 0.2, 1)*/

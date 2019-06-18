@@ -97,17 +97,23 @@ ol li::before {
     counter-increment: ordered-list-counter;
     opacity: .8;
 }
+/*-------------Inputs and Buttons--------------------------*/
+
+select {
+	border: none;
+	appearance: none;
+	-moz-appearance: none; /* Firefox */
+	-webkit-appearance: none; /* Safari and Chrome */
+}
 select[name="employment-type"] {
 	color: var(--purple);
 }
 select[name="job-type"] {
 	color: var(--orange);
 }
-select[name="job-query"] {
+select[name="project-type"] {
 	color: var(--green);
 }
-/*-------------Inputs and Buttons--------------------------*/
-
 input[type="submit"] {
 	display: block;
 }

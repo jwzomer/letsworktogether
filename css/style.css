@@ -5,13 +5,7 @@
 	--text-gray: #555;
 	--light-gray: #777;
 }
-/*^^Read more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables*/
 
-
-*, *:before, *:after { 
-  box-sizing: border-box;
-}
-/*^^To read more about box-sizing and why you'd want to overwrite it see https://css-tricks.com/international-box-sizing-awareness-day/ or https://www.w3schools.com/cssref/css3_pr_box-sizing.asp*/
 /*--------------------------------------------------------
 						Font Assignments
 --------------------------------------------------------*/
@@ -103,9 +97,18 @@ ol li::before {
     counter-increment: ordered-list-counter;
     opacity: .8;
 }
+select[name="employment-type"] {
+	color: var(--purple);
+}
+select[name="job-type"] {
+	color: var(--orange);
+}
+select[name="job-query"] {
+	color: var(--green);
+}
+/*-------------Inputs and Buttons--------------------------*/
 
-/*----------------------Button--------------------------*/
-button {
+input[type="submit"] {
 	display: block;
 }
 

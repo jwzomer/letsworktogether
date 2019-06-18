@@ -130,13 +130,22 @@ select {
     left: -0.2ch;*/
     /*Adjusts for the space at the start of each select > option*/
 }
+.select-arrow {
+	position: relative;
+	font-size: inherit;
+}
 .select-arrow::after {
 	/*Arrow*/
     content: '';
-	right: .3em;
+    position: absolute;
+	right: 0;
 	top: calc(50% - .5em);
-	border-width: 8px 10px;
-	border-left-color: currentColor;
+	border: 2px solid currentColor;
+	border-top: none;
+	border-left: none;
+  	transform: rotate(45deg);
+  	width: 2em;
+  	height: 1em;
 }
 
 select[name="employment-type"] {

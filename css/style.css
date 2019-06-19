@@ -253,12 +253,14 @@ a.go-button::before {
 	z-index: -1;
 	content: repeating-linear-gradient(
 		45deg,
-		var(--green),
-		var(--green) 10px,
-		white 10px,
-		white 20px
+		white,
+		white .125em,
+		transparent .125em,
+		transparent .125em
 		);
 	overflow: hidden;
+	background: var(--light-gray);
+	opacity: .5;
 }
 /*--------------------------------------------------------
 						Article

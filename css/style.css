@@ -1,5 +1,5 @@
 :root {
-	--purple: #9400b5;
+	--purple: #750e8c;
 	--orange: #ff6f28;
 	--green: #0cb880;
 	--text-gray: #555;
@@ -240,7 +240,7 @@ a.go-button {
 	display: block;
 	margin-top: 1.25em;
 	position: relative;
-	border: .075em solid white;
+	border: .1em solid white;
 }
 a.go-button::before {
 	content: '';
@@ -252,7 +252,7 @@ a.go-button::before {
 	border-radius: .5em;
 	z-index: -1;
 	content: repeating-linear-gradient(
-		45deg,
+		-45deg,
 		white,
 		white .125em,
 		transparent .125em,

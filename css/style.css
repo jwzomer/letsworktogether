@@ -122,11 +122,16 @@ main {
 	display: grid;
 	height: 100vh;
 }
+/*-------------Form--------------------------*/
+
 #job-query {
 	margin: auto;
 	font-size: 30px;
+	letter-spacing: -.15rem;
 }
-/*-------------Inputs and Buttons--------------------------*/
+#job-query * {
+	letter-spacing: inherit;
+}
 .select-arrow {
 	position: relative;
 	font-size: inherit;

@@ -105,8 +105,13 @@ ol li::before {
 /*--------------------------------------------------------
 						Header
 --------------------------------------------------------*/
-header {
+header, footer {
 	position: fixed;
+	padding: 1em;
+	box-shadow: 1.79px 2.69px 17.92px rgba(0, 0, 0, 0.1);
+	width: 100%;
+}
+header {
 	top: 0;
 }
 
@@ -230,7 +235,6 @@ input[type="submit"] {
 						Footer
 --------------------------------------------------------*/
 footer {
-	position: fixed;
 	bottom: 0;
 }
 

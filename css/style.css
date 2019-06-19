@@ -1,5 +1,5 @@
 :root {
-	--purple: #750e8c;
+	--purple: #640b77c;
 	--orange: #ff6f28;
 	--green: #0cb880;
 	--text-gray: #555;
@@ -123,7 +123,6 @@ main {
 	height: 100vh;
 }
 /*-------------Form--------------------------*/
-
 #job-query {
 	margin: auto;
 	font-size: 30px;
@@ -181,6 +180,18 @@ select {
 	max-width: 100%;
 	transition: max-width .5s;
 	color: currentColor;
+	position: relative;
+}
+select:focus {
+    outline: none;
+}
+select:focus::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: 2px solid currentColor;
 }
 select[data-option-selected="freelance"] {
 	max-width: 7.8ch;

@@ -182,7 +182,7 @@ select {
 	color: currentColor;
 	position: relative;
 }
-select:focus {
+/*select:focus {
     outline: none;
 }
 select:focus::after {
@@ -192,7 +192,7 @@ select:focus::after {
     right: 0;
     bottom: 0;
     border-bottom: 2px solid currentColor;
-}
+}*/
 select[data-option-selected="freelance"] {
 	max-width: 7.8ch;
 }

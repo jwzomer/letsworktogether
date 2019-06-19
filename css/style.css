@@ -129,6 +129,7 @@ main {
 	font-size: 30px;
 	letter-spacing: -.05rem;
 	font-family: 'Georgia', serif;
+	color: var(--light-gray);
 }
 #job-query * {
 	letter-spacing: inherit;
@@ -227,7 +228,7 @@ input[type="submit"] {
 	cursor: pointer;
 	padding: 0;
 	margin-top: 1.25em;
-	color: var(--text-gray);
+	color: inherit;
 }
 /*--------------------------------------------------------
 						Article

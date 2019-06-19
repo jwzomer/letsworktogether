@@ -169,6 +169,7 @@ main {
 .select-arrow:nth-of-type(3) {
 	color: var(--green);
 }
+
 select {
 	border: none;
 	appearance: none;
@@ -193,6 +194,7 @@ select:focus::after {
     bottom: 0;
     border-bottom: 2px solid currentColor;
 }*/
+
 select[data-option-selected="freelance"] {
 	max-width: 7.8ch;
 }

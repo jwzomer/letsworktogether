@@ -259,6 +259,8 @@ select[data-option-selected="website project"] {
 	mix-blend-mode: multiply;
 	border-bottom: none;
 	border-right: none;
+	padding-bottom: calc(1em - .125em);
+	padding-right: calc(1.5em - .125em);
 }
 input[type="submit"] {
 	display: block;

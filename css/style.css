@@ -285,7 +285,7 @@ header #job-query {
 	right: 1em;
 	transform: translateX(100vw);
 	transition: transform .25s ease-in;
-	transition-delay: 1s;
+	transition-delay: 5s;
 }
 .move-out-the-way header #job-query {
 	transform: translateX(0);

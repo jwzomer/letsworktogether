@@ -57,7 +57,7 @@
 				<!-- <input type="submit" value="Let's see what you've got&hellip;"> -->
 
 				<button class="go-button">
-					Let&rsquo;s see what you've got&hellip;
+					Let&rsquo;s see what you&rsquo;ve got&hellip;
 				</button>
 			</form>
 			<article id="results">
@@ -76,7 +76,7 @@
 			</p>
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script>
+		<!-- <script>
 			var valueAttr = $(this).children('option:checked').val();
 			//When a user clicks on an option...
 			$('select').click(function() {
@@ -84,7 +84,7 @@
 				$( this ).parent().attr('data-option-selected', valueAttr);
 				//$( 'option' ).parent().attr('data-option-selected', valueAttr);
 			});
-		</script>
+		</script> -->
 		<script>
 			$('select').on('change', function(e){ 
 				var valueAttr = $(this).children('option:checked').val();

@@ -87,17 +87,12 @@ select:focus {
     clip-path: inset(0 .5em 0 0);
 }
 #skip-to-main {
-	clip: rect(1px,1px,1px,1px);
-	margin: 0;
-	width: 0;
-	overflow: hidden;
-	display: block;
+	display: inline-block;
 	position: absolute;
+	right: -100vw;
 }
 #skip-to-main:focus {
-	clip: auto;
-	height: auto;
-	width: auto;
+	right: 0;
 }
 /*----------------------Lists--------------------------*/
 ul {

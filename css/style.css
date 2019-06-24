@@ -197,21 +197,11 @@ select {
 	padding-right: 1em; /*Extend the select box to the right so users can click on the arrow I've added*/
 	cursor: pointer;
 	max-width: 100%;
-	transition: max-width .5s;
+	transition: max-width .25s ease-in;
 	color: currentColor;
 	position: relative;
 }
-/*select:focus {
-    outline: none;
-}
-select:focus::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-bottom: 2px solid currentColor;
-}*/
+
 
 select[data-option-selected="freelance"] {
 	max-width: 7.8ch;

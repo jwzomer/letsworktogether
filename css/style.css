@@ -143,6 +143,7 @@ main {
 #job-query {
 	margin: auto;
 	font-size: 30px;
+	font-size: 2em;
 	letter-spacing: -.05rem;
 	font-family: 'Georgia', serif;
 	color: var(--light-gray);
@@ -201,8 +202,6 @@ select {
 	color: currentColor;
 	position: relative;
 }
-
-
 select[data-option-selected="freelance"] {
 	max-width: 7.8ch;
 }
@@ -237,20 +236,6 @@ select[data-option-selected="website project"] {
 	max-width: 6.8ch;
 }
 
-input[type="submit"] {
-	display: block;
-	font-size: .85em;
-	appearance: none;
-	-moz-appearance: none; 
-	-webkit-appearance: none;
-	background: none;
-	border: none;
-	text-decoration: underline;
-	cursor: pointer;
-	padding: 0;
-	margin-top: 1.25em;
-	color: inherit;
-}
 .go-button {
 	text-decoration: none;
 	padding: 1em 1.5em;
@@ -283,6 +268,20 @@ input[type="submit"] {
 	overflow: hidden;
 	background: var(--light-gray);
 	opacity: .5;
+}
+input[type="submit"] {
+	display: block;
+	font-size: .85em;
+	appearance: none;
+	-moz-appearance: none; 
+	-webkit-appearance: none;
+	background: none;
+	border: none;
+	text-decoration: underline;
+	cursor: pointer;
+	padding: 0;
+	margin-top: 1.25em;
+	color: inherit;
 }
 /*--------------------------------------------------------
 						Article

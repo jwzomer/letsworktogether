@@ -250,7 +250,7 @@ select[data-option-selected="website project"] {
 	border: none;
 	font-size: .8em;
 }
-#go-button:active {
+#go-button:active, #move-out-the-way #go-button:active {
 	border: .125em inset #33333359;
 	mix-blend-mode: multiply;
 	border-bottom: none;

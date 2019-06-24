@@ -119,12 +119,12 @@
 			var trimmedLookingFor = $(lookingFor).trim();
 
 			$('textarea[name="more-information"]').text(
-				'I&rsquo;m looking for a ' + 
-				$('select[name="job-type"] option:selected').text() +
-				$('select[name="employment-type"] option:selected').text() +
-				$('select[name="project-type"] option:selected').text() +
+				"I'm looking for a " + 
+				$('select[name="employment-type"] option:selected').text() + ' ' +
+				$('select[name="job-type"] option:selected').text( ) + ' ' +
+				$('select[name="project-type"] option:selected').text( ) + ' ' +
 				'project.'
-				);
+			);
 		</script>
 		<!-- Information about LinkedIn's API for Recommendations https://developer.linkedin.com/docs/fields/recommendations -->
 	</body>

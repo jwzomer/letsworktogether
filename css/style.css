@@ -236,7 +236,7 @@ select[data-option-selected="website project"] {
 	max-width: 6.8ch;
 }
 
-.go-button {
+#go-button {
 	text-decoration: none;
 	padding: 1em 1.5em;
 	background: var(--green);
@@ -282,6 +282,24 @@ input[type="submit"] {
 	padding: 0;
 	margin-top: 1.25em;
 	color: inherit;
+}
+/*-------------Move out the way----------------------*/
+.move-out-the-way #job-inquiry {
+	font-size: 22px;
+	margin-top: 2em;
+	margin-right: unset;
+	margin-bottom: unset;
+	margin-left: 0.8em;
+}
+.move-out-the-way .select-arrow:not(:last-of-type)::after {
+	/*Stops the select arrows from breaking to a new line*/
+	content: none;
+}
+.move-out-the-way #go-button {
+	letter-spacing: initial;
+	padding: .5em .75em;
+	display: inline-block;
+	margin-left: .75ch;
 }
 /*--------------------------------------------------------
 						Article

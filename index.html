@@ -56,7 +56,7 @@
 				</span>
 				<!-- <input type="submit" value="Let's see what you've got&hellip;"> -->
 
-				<button class="go-button">
+				<button id="go-button">
 					Let&rsquo;s see what you&rsquo;ve got&hellip;
 				</button>
 			</form>
@@ -76,16 +76,14 @@
 			</p>
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<!-- <script>
-			var valueAttr = $(this).children('option:checked').val();
-			//When a user clicks on an option...
-			$('select').click(function() {
-				//Assign option's value to the parent select as a data attribute
-				$( this ).parent().attr('data-option-selected', valueAttr);
-				//$( 'option' ).parent().attr('data-option-selected', valueAttr);
-			});
-		</script> -->
 		<script>
+			//Add class to move form to header when go button is clicked
+			$('#go-button').on('click', function(e){ 
+				$( this ).html('Show me');
+			    $( '#job-query' ).addClass('move-out-the-way');
+			});
+
+			//Function to change the width of each select box for an optimal fit of the option selected
 			$('select').on('change', function(e){ 
 				var valueAttr = $(this).children('option:checked').val();
 			    $( this ).attr('data-option-selected', valueAttr);

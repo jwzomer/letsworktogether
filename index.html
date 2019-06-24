@@ -75,6 +75,29 @@
 				&copy; <?=date('Y');?> John Zomer. <a href="#">Let's make something beautiful together.</a>
 			</p>
 		</footer>
+		<form id="contact-modal">
+			<div>
+				<input type="text" name="contact-name" >
+				<label for="contact-name">My name</label>
+			</div>
+			<div>
+				<input type="radio" name="contact-preference" value="phone" checked>
+				<label for="phone">Phone</label>
+
+				<input type="radio" name="contact-preference" value="email">
+				<label for="email">Email</label>
+
+				<input type="radio" name="contact-preference" value="twitter">
+				<label for="twitter">Twitter</label>
+
+				<input type="radio" name="contact-preference" value="other">
+				<label for="other">Other</label>
+			</div>
+			<div>
+				<textarea name="more-information"></textarea>
+				<label for="more-information">Contact stuff</label>
+			</div>
+		</form>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script>
 			//Add class to move form to header when go button is clicked
@@ -90,6 +113,11 @@
 				var valueAttr = $(this).children('option:checked').val();
 			    $( this ).attr('data-option-selected', valueAttr);
 			});
+
+			//Copy text from #job-query to textarea's placeholder
+			var lookingFor = $('#job-query').text();
+
+			$('textarea[name="more-information"]').html('lookingFor');
 		</script>
 		<!-- Information about LinkedIn's API for Recommendations https://developer.linkedin.com/docs/fields/recommendations -->
 	</body>

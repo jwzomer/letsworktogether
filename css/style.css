@@ -250,13 +250,15 @@ select[data-option-selected="website project"] {
 	border: none;
 	font-size: .8em;
 }
-#go-button:active, #move-out-the-way #go-button:active {
+#move-out-the-way #go-button {
+	border: .125em solid currentColor;
+}
+#go-button:active, 
+#move-out-the-way #go-button:active {
 	border: .125em inset #33333359;
 	mix-blend-mode: multiply;
 	border-bottom: none;
 	border-right: none;
-	padding-bottom: calc(1em - .125em);
-	padding-right: calc(1em - .125em);
 }
 input[type="submit"] {
 	display: block;

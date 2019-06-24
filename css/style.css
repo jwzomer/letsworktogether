@@ -277,6 +277,10 @@ input[type="submit"] {
 	color: inherit;
 }
 /*-------------Move out the way----------------------*/
+.move-out-the-way main #job-query {
+	opacity: 0;
+	transition: opacity .25s ease-in;
+}
 
 header #job-query {
 	font-size: 20px;
@@ -291,15 +295,11 @@ header #job-query {
 .move-out-the-way header #job-query {
 	transform: translateX(0);
 }
-.move-out-the-way main #job-query {
-	opacity: 0;
-	transition: opacity .25s ease-in;
-}
-.move-out-the-way .select-arrow:not(:last-of-type)::after {
+.move-out-the-way header .select-arrow:not(:last-of-type)::after {
 	/*Stops the select arrows from breaking to a new line*/
 	content: none;
 }
-.move-out-the-way #go-button {
+.move-out-the-way header #go-button {
 	letter-spacing: initial;
 	padding: .5em .75em;
 	display: inline-block;

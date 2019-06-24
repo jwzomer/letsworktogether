@@ -89,7 +89,7 @@ select:focus {
 #skip-to-main {
 	display: inline-block;
 	position: absolute;
-	transform: translateX(-100vw);
+	transform: translateX(100vw);
 	transition: transform .125s;
 	right: 1em;
 }

@@ -152,6 +152,7 @@ main {
     height: 0.25em;
 	cursor: pointer;
 	pointer-events: none; /*Make the arrow unclickable so that a user will click the select beneath it to reveal the options*/
+	z-index: 1;
 }
 .select-arrow:not(:last-of-type)::after {
 	/*Make sure each select (except the last one) breaks into a new line after it */

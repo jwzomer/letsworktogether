@@ -89,10 +89,12 @@ select:focus {
 #skip-to-main {
 	display: inline-block;
 	position: absolute;
-	right: -100vw;
+	transform: translateX(-100vw);
+	transition: transform .125s;
+	right: 1em;
 }
 #skip-to-main:focus {
-	right: 1em;
+	transform: translateX(0);
 }
 /*----------------------Lists--------------------------*/
 ul {

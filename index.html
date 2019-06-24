@@ -104,7 +104,7 @@
 			//Add class to move form to header when go button is clicked
 			$('#go-button').on('click', function(event){ 
 				event.preventDefault()
-				$( this ).html('Show me');
+				$('header #go-button' ).html('Show me');
 			    $( 'body' ).addClass('move-out-the-way');
 			    $('#job-query').clone().appendTo('header');
 			});

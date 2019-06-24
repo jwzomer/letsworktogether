@@ -262,6 +262,7 @@ input[type="submit"] {
 	margin-top: 1.25em;
 	position: relative;
 	border: .1em solid white;
+	font-size: .8em;
 }
 .go-button::before {
 	content: '';

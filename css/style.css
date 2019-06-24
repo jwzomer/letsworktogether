@@ -271,7 +271,7 @@ input[type="submit"] {
 	color: inherit;
 }
 /*-------------Move out the way----------------------*/
-#job-inquiry.move-out-the-way  {
+#job-query.move-out-the-way  {
 	font-size: 22px;
 	margin-top: 2em;
 	margin-right: unset;

@@ -81,7 +81,7 @@ a:focus {
 						Objects
 --------------------------------------------------------*/
 *:focus {
-    background: linear-gradient(to bottom, transparent 0%,transparent calc(100% - 5px), var(--green) 1px);
+    background: linear-gradient(to bottom, transparent 0%,transparent calc(100% - 5px), var(--orange) 1px);
     outline: none;
 }
 select:focus {

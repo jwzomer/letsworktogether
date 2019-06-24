@@ -82,7 +82,22 @@ a:focus {
 *:focus {
     background: linear-gradient(to bottom, transparent 0%,transparent calc(100% - 5px), var(--green) 1px);
     outline: none;
+}
+select:focus {
     clip-path: inset(0 .5em 0 0);
+}
+#skip-to-main {
+	clip: rect(1px,1px,1px,1px);
+	margin: 0;
+	width: 0;
+	overflow: hidden;
+	display: block;
+	position: absolute;
+}
+#skip-to-main:focus {
+	clip: auto;
+	height: auto;
+	width: auto;
 }
 /*----------------------Lists--------------------------*/
 ul {

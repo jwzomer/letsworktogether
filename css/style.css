@@ -279,10 +279,11 @@ input[type="submit"] {
 /*-------------Move out the way----------------------*/
 
 header #job-query {
-	font-size: 22px;
+	font-size: 20px;
 	margin: initial;
 	position: absolute;
 	right: 1em;
+	bottom: calc(50% - .5em);
 	transform: translateX(100vw);
 	transition: transform .25s ease-in;
 	transition-delay: 5s;

@@ -217,31 +217,31 @@ select[data-option-selected="freelance"] {
 	max-width: 7.8ch;
 }
 select[data-option-selected="contract"] {
-	max-width: 7.1ch;
+	max-width: 7.2ch;
 }
 select[data-option-selected="full-time"] {
-	max-width: 7.1ch;
+	max-width: 7.5ch;
 }
 select[data-option-selected="volunteer"] {
-	max-width: 7.9ch;
+	max-width: 8.2ch;
 }
 select[data-option-selected="logo designer"] {
-	max-width: 10.6ch;
+	max-width: 10.7ch;
 }
 select[data-option-selected="graphic designer"] {
-	max-width: 12.7ch;
+	max-width: 12.9ch;
 }
 select[data-option-selected="web designer"] {
-	max-width: 10.5ch;
+	max-width: 10.6ch;
 }
 select[data-option-selected="web developer"] {
 	max-width: 11.5ch;
 }
 select[data-option-selected="branding project"] {
-	max-width: 7.4ch;
+	max-width: 7.9ch;
 }
 select[data-option-selected="print project"] {
-	max-width: 4.6ch;
+	max-width: 5ch;
 }
 select[data-option-selected="website project"] {
 	max-width: 6.8ch;

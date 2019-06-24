@@ -248,7 +248,7 @@ input[type="submit"] {
 	margin-top: 1.25em;
 	color: inherit;
 }
-a.go-button {
+.go-button {
 	text-decoration: none;
 	padding: 1em 1.5em;
 	background: var(--green);
@@ -260,7 +260,7 @@ a.go-button {
 	position: relative;
 	border: .1em solid white;
 }
-a.go-button::before {
+.go-button::before {
 	content: '';
 	position: absolute;
 	top: 0.5rem;

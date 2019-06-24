@@ -80,7 +80,8 @@
 			//Add class to move form to header when go button is clicked
 			$('#go-button').on('click', function(e){ 
 				$( this ).html('Show me');
-			    $( '#job-query' ).addClass('move-out-the-way');
+			    $( 'body' ).addClass('move-out-the-way');
+			    $('#job-query').clone().appendTo('header');
 			});
 
 			//Function to change the width of each select box for an optimal fit of the option selected

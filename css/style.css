@@ -79,7 +79,11 @@ a:focus {
 /*--------------------------------------------------------
 						Objects
 --------------------------------------------------------*/
-
+*:focus {
+    background: linear-gradient(to bottom, transparent 0%,transparent calc(100% - 5px), var(--green) 1px);
+    outline: none;
+    clip-path: inset(0 .5em 0 0);
+}
 /*----------------------Lists--------------------------*/
 ul {
 	-webkit-padding-start: 0px;

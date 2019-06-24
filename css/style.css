@@ -92,7 +92,7 @@ select:focus {
 	right: -100vw;
 }
 #skip-to-main:focus {
-	right: 0;
+	right: 1em;
 }
 /*----------------------Lists--------------------------*/
 ul {

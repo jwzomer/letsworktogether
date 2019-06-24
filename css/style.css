@@ -287,7 +287,7 @@ header #job-query {
 	margin: initial;
 	position: absolute;
 	right: 1em;
-	bottom: calc(50% - .5em);
+	bottom: .6em;
 	transform: translateX(100vw);
 	transition: transform .25s ease-in;
 	transition-delay: 5s;
@@ -304,6 +304,7 @@ header #job-query {
 	padding: .5em .75em;
 	display: inline-block;
 	margin-left: .75ch;
+	border-radius: .25em;
 }
 /*--------------------------------------------------------
 						Article

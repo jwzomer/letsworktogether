@@ -277,12 +277,22 @@ input[type="submit"] {
 	color: inherit;
 }
 /*-------------Move out the way----------------------*/
-#job-query.move-out-the-way  {
+
+header #job-query {
 	font-size: 22px;
-	margin-top: 2em;
-	margin-right: unset;
-	margin-bottom: unset;
-	margin-left: 0.8em;
+	margin: initial;
+	position: absolute;
+	right: 1em;
+	transform: translateX(100vw);
+	transition: transform .25s ease-in;
+	transition-delay: 1s;
+}
+.move-out-the-way header #job-query {
+	transform: translateX(0);
+}
+.move-out-the-way main #job-query {
+	opacity: 0;
+	transition: opacity .25s ease-in;
 }
 .move-out-the-way .select-arrow:not(:last-of-type)::after {
 	/*Stops the select arrows from breaking to a new line*/
